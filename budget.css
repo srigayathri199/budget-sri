@@ -328,6 +328,9 @@ h2 {
 }
 
 @media (max-width:728px) {
+    body {
+        overflow-x: hidden;
+    }
     .top {
         width: 100vw;
         height: 100vh;
