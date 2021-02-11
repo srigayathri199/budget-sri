@@ -345,7 +345,7 @@ h2 {
     }
     .budget__income,
     .budget__expenses {
-        width: 310px;
+        width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -366,12 +366,11 @@ h2 {
         margin: 10px;
         display: block;
     }
-    .icome__title,
-    .expenses__title {
-        margin-left: auto;
-        margin-right: auto;
-        /* text-align: center; */
+    h2.icome__title,
+    h2.expenses__title {
+        right: 100%;
         font-size: 25px;
+        margin-right: 106px;
     }
     .income__list,
     .expenses__list {
