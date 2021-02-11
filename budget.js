@@ -434,6 +434,9 @@ var controller = (function(budgetctrl, UIctrl) {
     }
     return {
         init: function() {
+            window.addEventListener('load', function() {
+                alert(`Welcome to the website!\n Add your incomes and expenditures below using form.\n --> Toggle to choose what u are adding and it automatically updates in the respective area \n  '+' -> income \n  '-' -> expense \n You can delete both incomes and expenses by hovering at the end of the lists, and the every event you do automatically updates at the top`)
+            })
             console.log("application started");
             UIctrl.displaymonth();
             UIctrl.displaybudget({

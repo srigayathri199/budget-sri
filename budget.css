@@ -328,12 +328,19 @@ h2 {
 }
 
 @media (max-width:728px) {
+    html,
     body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
         overflow-x: hidden;
     }
     .top {
         width: 100vw;
         height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
         overflow-x: hidden;
     }
     .budget__title {
@@ -355,7 +362,9 @@ h2 {
     }
     .icome__title,
     .expenses__title {
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* text-align: center; */
         font-size: 25px;
     }
     .income__list,
@@ -370,10 +379,17 @@ h2 {
     }
     .income,
     .expenses {
+        text-align: center;
         display: block;
         float: none;
     }
     .item__percentage {
         width: auto;
+    }
+}
+
+@media (min-width:729px) and (max-width:980px) {
+    body {
+        overflow-x: hidden;
     }
 }
